@@ -201,3 +201,14 @@ Changelog
 
 ### 0.2
  * Initial decent release
+
+### 目录说明
+> resources目录下包含版本说明
+1. [Redis2](src%2Fmain%2Fresources%2FRedis2)
+- Redis2所有版本都是2.8.19
+2. [Redis5](src%2Fmain%2Fresources%2FRedis5)
+- Redis5所有版本都是5.0.14
+3. [Redis6](src%2Fmain%2Fresources%2FRedis6)
+- [redis-server.exe](src%2Fmain%2Fresources%2FRedis6%2Fredis-server.exe)为5.0.14版本
+- [redis-server](src%2Fmain%2Fresources%2FRedis6%2Fredis-server)为6.2.9版本
+- [redis-server.app](src%2Fmain%2Fresources%2FRedis6%2Fredis-server.app)为6.2.9版本

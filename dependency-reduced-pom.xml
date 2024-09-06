@@ -1,31 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.github.kstyrc</groupId>
+  <groupId>cn.iceblue</groupId>
   <artifactId>embedded-redis</artifactId>
-  <name>embedded-redis</name>
-  <version>0.7-SNAPSHOT</version>
+  <name>嵌入式redis</name>
+  <version>0.1-SNAPSHOT</version>
   <description>Redis embedded server for Java integration testing</description>
-  <url>https://github.com/kstyrc/embedded-redis</url>
-  <developers>
-    <developer>
-      <name>Krzysztof Styrc</name>
-      <email>kstyrc@gmail.com</email>
-    </developer>
-  </developers>
-  <licenses>
-    <license>
-      <name>The Apache Software License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-  <scm>
-    <connection>scm:git:https://github.com/kstyrc/embedded-redis.git</connection>
-    <developerConnection>scm:git:https://github.com/kstyrc/embedded-redis.git</developerConnection>
-    <tag>embedded-redis-0.5</tag>
-    <url>https://github.com/kstyrc/embedded-redis</url>
-  </scm>
   <build>
     <plugins>
       <plugin>
@@ -138,16 +118,6 @@
       </exclusions>
     </dependency>
   </dependencies>
-  <distributionManagement>
-    <repository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class RedisServerBuilder {
     private static final String LINE_SEPARATOR = System.getProperty("line.separator");
-    private static final String CONF_FILENAME = "embedded-redis-server";
+    private static final String CONF_FILENAME = "embedded-redis-server.app";
 
     private File executable;
     private RedisExecProvider redisExecProvider = RedisExecProvider.defaultProvider();

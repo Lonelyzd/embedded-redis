@@ -9,7 +9,12 @@ import java.io.IOException;
 public class TestMain {
     public static void main(String[] args) throws IOException {
         System.out.println("Redis正在启动");
-        RedisServer redisServer = new RedisServer(6379);
-        redisServer.start();
+
+        RedisServer build = RedisServer.builder()
+                .redisExecProvider(RedisExecProvider.defaultProvider())
+                .port(6379)
+                .setting("bind 0.0.0.0")
+                .setting("protected-mode no").build();
+        build.start();
     }
 }

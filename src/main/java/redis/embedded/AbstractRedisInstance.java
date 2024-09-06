@@ -11,7 +11,9 @@ import java.util.concurrent.Executors;
 
 import org.apache.commons.io.IOUtils;
 
+
 abstract class AbstractRedisInstance implements Redis {
+
     protected List<String> args = Collections.emptyList();
     private volatile boolean active = false;
 	private Process redisProcess;
@@ -55,8 +57,10 @@ abstract class AbstractRedisInstance implements Redis {
         BufferedReader reader = new BufferedReader(new InputStreamReader(redisProcess.getInputStream()));
         try {
             String outputLine;
+
             do {
                 outputLine = reader.readLine();
+                System.out.println(outputLine);
                 if (outputLine == null) {
                     //Something goes wrong. Stream is ended before server was activated.
                     throw new RuntimeException("Can't start redis server. Check logs for details.");
@@ -72,6 +76,7 @@ abstract class AbstractRedisInstance implements Redis {
     private ProcessBuilder createRedisProcessBuilder() {
         File executable = new File(args.get(0));
         ProcessBuilder pb = new ProcessBuilder(args);
+        System.out.println(executable.getAbsolutePath());
         pb.directory(executable.getParentFile());
         return pb;
     }
